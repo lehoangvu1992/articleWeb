@@ -1,0 +1,7 @@
+<div class="article-content">
+  <h2><%= @article.title %></h2>
+
+  <%= simple_format @article.content %>
+</div>
+<%= render 'articles/footer', article: @article %>
+<%= render 'articles/comments_section', article: @article %>
